@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:"Source Sans Pro", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+
+}
+.wrapper{
+    background-image: url(images/Desktop-Wallpaper.png);
+    height: 100vh;
+    
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    
+}
+.quicklinks a{
+   
+    color: white;
+    text-decoration: none;
+    padding: 13px 15px;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.quicklinks> a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* latest release */
+.latest{
+    height: 100vh;
+    background-color: black;
+    padding: 2rem;
+    text-align: center;
+}
+.latest h1{
+    margin: 3rem;
+    font-size: 50px;
+}
+
+.album-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.album-detail{
+    width: 550px;
+    padding: 2rem;
+    
+    font-size: 18px;
+}
+.button{
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+
+    transition-duration: 0.2s;
+    transition-timing-function:linear;
+}
+/* subscription */
+.subscription h3{
+    text-align: center;
+    color: white;
+    
+}
+.subscription>p{
+    text-align: center;
+    color: white;
+}
+
+.subscription{
+    background-color: #434356;
+
+}
+.form{
+    text-align: center;
+    margin-top: 2rem;
+}
+#emailad{
+    height: 3rem;
+    background-color: #434356;
+    border: none;
+    
+}
+
+#subs{
+    margin-top: 2rem;
+    background-color: #E82561;
+    height: 3.5rem;
+    width: 7rem;
+    color: white;
+    font-weight: 750;
+    border: none;
+    margin-bottom: 0.5rem;
+
+}
+#subs:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+/* bio-page */
+
+
+.wrappers{
+    background-image: url('images/bio-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.bio{
+    position: relative;
+    color: rgb(255, 255, 255);
+    bottom: 200px;
+    width: 65vw;
+    margin: 0 auto;
+    font-size: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+.bio-section{
+
+    background-color: black;
+    color: white;
+    
+    
+    
+}
+.container-bio{
+    width: 75vw;
+    display: flex;
+    margin: 0 auto;
+    padding: 3rem;
+    position: relative;
+    bottom:2rem;
+}
+.bio-about{
+    width: 770px;
+    /* height: 800px; */
+    margin-right: 4rem;
+    font-weight: 400;
+    
+}
+figure figcaption{
+    color: white;
+}
+#book-email{
+    color: #E82561
+
+}
+#book-email:hover{
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.2s;
+    
+}
+.management{
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255,0.3);
+    height: 300px;
+    width: 450px;
+    overflow: hidden;
+}
+footer{
+    background-color: black;
+    color:gray;
+    text-align: center;
+    padding: 2rem;
+    height: 100px;
+    overflow: hidden;
+}
+/* music */
+.music-wrapper{
+    background-image: url(images/photo.webp);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: top;
+    
+    
+}
+.img-txt{
+    color: white;
+    position: relative;
+    color: white;
+    top: 230px;
+    width: 66vw;
+    margin: 0 auto;
+    font-size: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+.music-section{
+    background-color: black;
+}
+.music-cards-container{
+    display: grid;
+    width: 66vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,333px);
+    grid-template-rows:repeat(3,333px);
+    gap: 1.8rem;
+    margin-top: 3rem;
+    
+}
+.card{
+    overflow: hidden;
+    background-color: black;
+}
+.card>img{
+    width: 100%;
+}
+.card>img:hover{
+    transition-duration: 0.5s;
+    opacity: 0.7;
+    transform: scale(0.8);
+}
+.card>p{
+    color: white;
+    position: relative;
+    left: 30px;
+    bottom:40px;
+    opacity: 0;
+    z-index: 1;
+    height: 100%;
+
+}
+
+.card:hover>p{
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* store */
+
+@keyframes slide {
+    0% {
+        
+        background-image: url('images/storeimg1.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+       
+        background-image:url('images/Seedhe-Maut-by-Samarth.jpg') ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    33% {
+        
+        background-image: url('images/Seedhe-Maut-by-Anurag-Sharma-5a.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    66% {
+        
+        background-image: url('images/Seedhe-Maut-Wide-Mask-4.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.store-wrapper{
+
+                      
+                      
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 18s infinite;
+}
+.store-section{
+    width: 65vw;
+    margin: 0 auto;
+}
+.mask{
+    width: 100%;
+    margin-top: 100px;
+}
+.mask>img{
+    width: 100%;
+}
+.st-latest{
+    padding: 2rem;
+    display: flex;
+    justify-items: baseline;
+    justify-content: space-between;
+    color: white ;
+}
+.st-latest>button{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 220px;
+    height: 35px;
+}
+.store-grid{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(3,420px);
+    gap: 1rem;
+}
+.store-card{
+    overflow: hidden;
+    
+}
+.store-card>figure>img{
+    height: 250px;
+}
+.fig-text{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.figcaption{
+    font-size: 15px;
+}
+.fig-text>button{
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 15px;
+    width: 90%;
+}
+.fig-text>button:hover{
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
+/* login */
+.background-login{
+    height: 100vh;
+    background-image: url(images/Desktop-Wallpaper.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-card{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgba(255, 255, 255,0.5);
+    border-radius: 12px;
+    backdrop-filter:blur(4px);
+}
+.login-card>h2{
+    color: #ffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 20px 0;
+
+}
+
+.form-group
+{
+    position: relative;
+    width: 330px;
+    margin: 30px 0;
+    border-bottom: 3px solid #ffff;
+}
+
+.form-group input
+{
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.form-group>input::placeholder
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+
+}
+
+
+.login-card>p
+{
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+}
+
+p>a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+p>a:hover
+{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#btn
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#btn:hover
+{
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
